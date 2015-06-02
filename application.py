@@ -10,6 +10,7 @@
 This is an application which compares compare-sites
 """
 
+from wtforms import Form, BooleanField, StringField, validators
 from flask import Flask
 import os
 

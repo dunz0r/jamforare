@@ -10,12 +10,14 @@
 This is an application which compares compare-sites
 """
 
-from wtforms import Form, BooleanField, StringField, validators
 from flask import Flask
 import os
 
 app = Flask(__name__)
 
-@app.route('/')
-def index():
-    return 'Hello from flask and stuff'
+#{{{ Pages
+class pages
+    @app.route('/' methods=['GET'])
+    def index():
+        return render_template('start.html')
+

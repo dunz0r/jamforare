@@ -17,7 +17,7 @@ app = Flask(__name__)
 
 #{{{ Pages
 class pages():
-    @app.route('/' methods=['GET'])
+    @app.route('/', methods=['GET'])
     def index():
         return render_template('start.html')
 #}}}
